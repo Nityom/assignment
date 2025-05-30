@@ -52,7 +52,7 @@ export default function FeaturesSection() {
             </h2>
 
             <p className="text-gray-700 text-lg leading-relaxed font-inter transition-opacity duration-500">
-              We go beyond building tech — we create solutions that are reliable, scalable, and engineered for long-term success. Here's what sets us apart:
+              We go beyond building tech — we create solutions that are reliable, scalable, and engineered for long-term success. Here&apos;s what sets us apart:
             </p>
           </div>
 

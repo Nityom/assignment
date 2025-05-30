@@ -81,7 +81,7 @@ export default function ServicesSection() {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-7 2xl:gap-8">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <div
                 key={service.title}
                 className="bg-white rounded-xl p-5 sm:p-6 md:p-7 lg:p-8 xl:p-9 2xl:p-10 shadow-lg transition-shadow duration-300 flex flex-col justify-between min-h-[280px] sm:min-h-[300px] md:min-h-[320px] lg:min-h-[345px] xl:min-h-[360px] 2xl:min-h-[380px]"

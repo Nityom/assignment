@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function TechVisionSection() {
+export default function HeaderSection() {
   // Extract reusable styles
   const textStyle = "md:text-[#6B7280] md:font-montserrat md:text-[20px] md:font-normal md:leading-[36px]";
   
@@ -28,7 +28,7 @@ export default function TechVisionSection() {
               reliable, scalable, and engineered for long-term success.
             </span>
             <span className={`block ${textStyle}`}>
-              Here's what our partners and clients say:
+              Here&apos;s what our partners and clients say:
             </span>
           </p>
         </div>

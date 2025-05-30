@@ -106,7 +106,7 @@ export default function Testimonials() {
                       </div>
                     )}
                     <p className="text-gray-800 text-base flex-grow mb-6 leading-relaxed">
-                      "{testimonial.content}"
+                      &ldquo;{testimonial.content}&rdquo;
                     </p>
                     <div className="flex items-center mt-auto">
                       {testimonial.author.image && (

@@ -28,7 +28,7 @@ export default function TechVisionSection() {
               reliable, scalable, and engineered for long-term success.
             </span>
             <span className={`block ${textStyle}`}>
-              Here's what our partners and clients say:
+              Here&apos;s what our partners and clients say:
             </span>
           </p>
         </div>
