@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 interface Testimonial {
   id: number;
@@ -20,7 +19,6 @@ export default function Testimonials() {
     {
       id: 1,
       company: "Financial Services",
-      logo: "/assets/logos/financial-services.png",
       content: "We are a Slack and Google shop, and Metomic had out-of-the-box integrations that made implementation a breeze.",
       author: {
         name: "Tim Collins",
@@ -94,27 +92,29 @@ export default function Testimonials() {
                     key={testimonial.id} 
                     className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col min-h-[300px]"
                   >
-                    {testimonial.logo && (
-                      <div className="bg-[#F7F5FF] p-3 rounded-lg self-start mb-6">
-                        <Image 
+                    <div className="bg-[#F7F5FF] p-3 rounded-lg self-start mb-6">
+                      {testimonial.logo ? (
+                        <img 
                           src={testimonial.logo} 
-                          alt={`${testimonial.company} `} 
-                          width={100}
-                          height={32}
+                          alt={`${testimonial.company} logo`} 
                           className="h-8 object-contain"
                         />
-                      </div>
-                    )}
+                      ) : (
+                        <div className="h-8 flex items-center">
+                          <span className="text-sm font-semibold text-[#6B46C1] tracking-wide">
+                            {testimonial.company}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                     <p className="text-gray-800 text-base flex-grow mb-6 leading-relaxed">
                       &ldquo;{testimonial.content}&rdquo;
                     </p>
                     <div className="flex items-center mt-auto">
                       {testimonial.author.image && (
-                        <Image 
+                        <img 
                           src={testimonial.author.image} 
                           alt={testimonial.author.name} 
-                          width={48}
-                          height={48}
                           className="w-12 h-12 rounded-full mr-3 object-cover"
                         />
                       )}
