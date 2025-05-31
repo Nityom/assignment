@@ -90,7 +90,7 @@ export default function FooterSection() {
 
         {/* Copyright section */}
         <div className="pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-center sm:justify-between items-center text-xs text-gray-500 space-y-2 sm:space-y-0">
-          <p>© {new Date().getFullYear()} - Company Name - All Rights Reserved</p>
+          <p>© 2024 - lodckdcksck d cw cw cwd cwc wjcwjcjwcjw cjwdcjwc  - sqcjcwcwcwcw</p>
           <p>Designed by AGT</p>
         </div>
       </div>
