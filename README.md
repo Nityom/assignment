@@ -4,6 +4,10 @@ This is a Frontend Internship Assignment project built with Next.js. You can vie
 
 ## Project Overview
 
+![HeroSection Preview](image.png)
+
+![fearuresSection Previw](image-1.png)
+
 This project demonstrates frontend development skills including:
 - Responsive design implementation
 - Component-based architecture
