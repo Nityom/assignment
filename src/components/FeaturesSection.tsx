@@ -40,7 +40,7 @@ export default function FeaturesSection() {
   return (
     <section className="py-20 bg-gradient-to-b from-blue-50 to-[#316BFF] max-w-full mx-auto rounded-[24px] relative overflow-hidden px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+
         <div className="flex flex-col md:flex-row mb-16">
           <div className="md:w-1/2 md:pr-8">
             <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium inline-flex items-center gap-1 font-inter mb-4 transition-opacity duration-500 opacity-100">
@@ -56,7 +56,7 @@ export default function FeaturesSection() {
             </p>
           </div>
 
-          {/* Brain Image */}
+     
           <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
             <div className="relative w-full max-w-sm">
               <Image
@@ -70,7 +70,7 @@ export default function FeaturesSection() {
           </div>
         </div>
 
-        {/* Feature Cards */}
+   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {featureCards.map((card, index) => (
             <div
@@ -84,7 +84,7 @@ export default function FeaturesSection() {
           ))}
         </div>
 
-        {/* Read More Button */}
+ 
         <div className="mt-12 flex justify-start">
           <a
             href="#"
@@ -95,7 +95,6 @@ export default function FeaturesSection() {
         </div>
       </div>
 
-      {/* Optional style to enable hover only on mobile */}
       <style jsx>{`
         @media (min-width: 768px) {
           .mobile-hover:hover {

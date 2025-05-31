@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function TechVisionSection() {
-  // Extract reusable styles
+
   const textStyle = "md:text-[#6B7280] md:font-montserrat md:text-[20px] md:font-normal md:leading-[36px]";
   
   return (
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-        {/* Text container */}
+
         <div className="w-full md:flex-1 md:max-w-[600px]">
           <div className="inline-flex items-center gap-1.5 bg-blue-50 text-[#4787FF] px-4 py-2 rounded-full text-sm font-medium mb-6">
             <span className="text-base">⚡</span>
@@ -33,7 +33,7 @@ export default function TechVisionSection() {
           </p>
         </div>
 
-        {/* Image container */}
+      
         <div className="w-full md:flex-shrink-0 md:w-auto flex justify-center">
           <div 
             className="relative max-w-[400px] w-full h-auto rounded-lg overflow-hidden" 

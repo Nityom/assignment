@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-// Feature data to avoid repetition
+// Feature data 
 const features = [
   {
     id: 1,
@@ -119,9 +119,9 @@ export default function ToolsSection() {
     <section className="w-full mb-7 py-12 sm:py-16 md:py-18 lg:py-20 xl:py-24 2xl:py-0 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20">
-          {/* Left content column */}
+      
           <div className="w-full lg:w-1/2">
-            {/* Top button - responsive design */}
+      
             <button className="flex items-center text-xs sm:text-sm font-medium text-[#316BFF] rounded-md px-3 sm:px-4 py-1 sm:py-1.5 mb-4 sm:mb-6 bg-[rgba(238,233,255,0.06)] border border-[#4787FF] hover:bg-[rgba(238,233,255,0.12)] transition-colors">
               <Image 
                 src="/assets/background/lightning.svg" 
@@ -133,7 +133,6 @@ export default function ToolsSection() {
               <span className="whitespace-nowrap">How we help</span>
             </button>
             
-            {/* Main heading - responsive typography */}
             <div className="text-left mb-6 px-4 sm:px-6">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#316BFF] mb-2 font-montserrat leading-snug">
                 <span className="lg:whitespace-nowrap whitespace-normal">
@@ -144,7 +143,6 @@ export default function ToolsSection() {
               </h2>
             </div>
 
-            {/* Feature items - responsive spacing and sizing */}
             <div className="space-y-4 sm:space-y-5 md:space-y-6">
               {features.map(feature => (
                 <FeatureCard 
@@ -158,17 +156,16 @@ export default function ToolsSection() {
             </div>
           </div>
           
-          {/* Right column with responsive image container */}
+     
           <div className="w-full lg:w-1/2 flex items-center mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-32 2xl:mt-40">
             <div className="bg-[#316BFF] rounded-lg p-4 sm:p-6 md:p-8 h-[400px] sm:h-[500px] md:h-[580px] lg:h-[620px] xl:h-[645px] flex-1 flex flex-col max-w-full">
-              {/* White card with responsive dimensions */}
+           
               <div className="bg-white rounded-md w-full h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px] xl:h-[461px] mb-8 sm:mb-12 md:mb-16 mx-auto flex-shrink-0">
                 <div className="h-full flex items-center justify-center text-gray-400 text-sm sm:text-base">
                   {activeView === 'designer' ? 'Designer View Content' : 'Code View Content'}
                 </div>
               </div>
-              
-              {/* Toggle buttons with responsive design */}
+        
               <div className="flex justify-center mt-auto">
                 <div className="flex rounded-full bg-[#316BFF] border border-[rgba(255,255,255,0.25)]">
                   <ViewToggleButton 

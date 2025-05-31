@@ -47,13 +47,13 @@ export default function ServicesSection() {
       <section 
         className="py-12 sm:py-16 md:py-18 lg:py-20 xl:py-24 2xl:py-28 bg-gradient-to-b from-[#316BFF] via-white to-white relative overflow-hidden w-full max-w-[1396px] rounded-2xl sm:rounded-3xl lg:rounded-[2rem] xl:rounded-[2.5rem] 2xl:rounded-[3rem]"
       >
-        {/* Responsive Grid Background */}
+       
         <div 
           className="absolute inset-0 rounded-2xl sm:rounded-3xl lg:rounded-[2rem] xl:rounded-[2.5rem] 2xl:rounded-[3rem] bg-[image:linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] sm:bg-[length:50px_50px] md:bg-[length:60px_60px] lg:bg-[length:80px_80px] bg-repeat mix-blend-overlay"
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 relative">
-          {/* Badge Section */}
+        
           <div className="mb-4 sm:mb-5 md:mb-6">
             <span 
               className="inline-flex items-center py-1.5 sm:py-2 px-3 sm:px-4 text-white text-xs sm:text-sm font-medium rounded-md sm:rounded-lg border border-white bg-[rgba(238,233,255,0.06)]"
@@ -69,7 +69,6 @@ export default function ServicesSection() {
             </span>
           </div>
 
-          {/* Heading Section */}
           <div className="text-left mb-10 sm:mb-12 md:mb-14 lg:mb-16">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-1 sm:mb-2 font-montserrat leading-tight">
               Everything you need to protect & secure
@@ -79,14 +78,14 @@ export default function ServicesSection() {
             </h3>
           </div>
 
-          {/* Services Grid */}
+
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-6 xl:gap-7 2xl:gap-8">
             {services.map((service) => (
               <div
                 key={service.title}
                 className="bg-white rounded-xl p-5 sm:p-6 md:p-7 lg:p-8 xl:p-9 2xl:p-10 shadow-lg transition-shadow duration-300 flex flex-col justify-between min-h-[280px] sm:min-h-[300px] md:min-h-[320px] lg:min-h-[345px] xl:min-h-[360px] 2xl:min-h-[380px]"
               >
-                {/* Icon Section */}
+      
                 <div className="text-[#316BFF] mb-4 sm:mb-5 md:mb-6">
                   <Image 
                     src="/assets/logos/settings.jpg" 
@@ -97,7 +96,7 @@ export default function ServicesSection() {
                   />
                 </div>
                 
-                {/* Content Section */}
+  
                 <div className="flex-grow">
                   <h3 className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-semibold text-gray-900 mb-2 sm:mb-3 font-montserrat leading-tight">
                     {service.title}
@@ -108,7 +107,7 @@ export default function ServicesSection() {
                   </p>
                 </div>
                 
-                {/* CTA Button */}
+              
                 <div className="mt-auto">
                   <a 
                     href="#" 

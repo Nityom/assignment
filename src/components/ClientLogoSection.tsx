@@ -10,7 +10,7 @@ interface ClientLogo {
 
 export default function ClientLogoSection() {
   const logos: ClientLogo[] = [
-    // Using files from public directory - paths start from the public root
+   
     { name: 'ROBLOX', src: '/assets/clients-logo/roblox.svg', width: 120, height: 40 },
     { name: 'LAIKA', src: '/assets/clients-logo/laika.svg', width: 120, height: 40 },
     { name: 'GINKO', src: '/assets/clients-logo/ginko.svg', width: 120, height: 40 },
@@ -37,7 +37,7 @@ export default function ClientLogoSection() {
               height={client.height}
               className="w-auto object-contain"
               style={{
-                maxHeight: '40px', // Control max height
+                maxHeight: '40px', 
               }}
             />
           </div>

@@ -12,16 +12,16 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
 
   return (
     <div className="flex justify-center min-h-screen px-4 py-10 relative">
-      {/* Background Blur */}
+
       <div className="absolute rounded-[30px] w-[95%] max-w-[1400px] h-[80vh] md:h-[646px] z-[-1]" />
 
-      {/* Main Section */}
+   
       <section
         className={`relative w-full max-w-[1400px] rounded-[30px] overflow-hidden ${className}`}
         style={{ background: 'linear-gradient(180deg, #F5F5F5 40%, #4787FF 400%)' }}
       >
         <div className="px-6 md:px-20 pt-16 md:pt-20 pb-10 text-center">
-          {/* Tagline */}
+  
           <div className="flex items-center justify-center mb-6">
             <div className="flex items-center gap-2 px-4 py-1 border-2 border-[#D8E6FF] bg-[rgba(238,233,255,0.06)] rounded-md text-blue-500 text-sm font-medium">
               <Image 
@@ -36,7 +36,7 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
             </div>
           </div>
 
-          {/* Headline */}
+ 
           <h1 className={`font-bold mb-6 ${headlineBaseStyle}`}>
             <span className="text-[#316BFF] tracking-tight block">
               Your Partner in Digital
@@ -61,16 +61,16 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
             </span>
           </h1>
 
-          {/* Blurred Background */}
+   
           <div className="absolute left-0 right-0 mx-auto top-[65%] z-[-1] w-[80%] h-[100px] md:h-[150px] blur-[66px] backdrop-blur-[100px] bg-white/80 rounded-full" />
 
-          {/* Description */}
+
           <p className="text-[#393E46] font-montserrat text-base md:text-lg leading-[28px] max-w-2xl mx-auto mb-10">
             We design, develop, and deliver scalable software, IT training,
             <br className="hidden md:inline" /> and digital transformation services tailored to your goals.
           </p>
 
-          {/* CTA */}
+
           <button 
             className="bg-white text-[#4787FF] px-6 md:px-8 py-3 rounded-3xl text-base md:text-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 border border-gray-200"
             aria-label="Explore Services"
@@ -78,7 +78,6 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
             Explore Services
           </button>
 
-          {/* Go to Events toggle */}
           <div
             role="link"
             tabIndex={0}

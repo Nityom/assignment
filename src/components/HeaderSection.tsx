@@ -12,7 +12,7 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   
-  // Extracted repeated styles
+ 
   const navLinkStyles = {
     color: '#4787FF',
     fontFamily: 'Inter, sans-serif',
@@ -28,7 +28,7 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
     background: '#4787FF'
   };
   
-  // Navigation items for DRY code
+ 
   const navItems = [
     "Platform",
     "Resource centre",
@@ -40,9 +40,9 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
   return (
     <header className={`relative bg-white ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
-        {/* Main header layout - responsive */}
+   
         <div className="flex items-center justify-between py-3 sm:py-4 lg:py-5">
-          {/* Logo with responsive sizing */}
+  
           <div className="flex-shrink-0">
             <span 
               className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold tracking-wider uppercase"
@@ -56,21 +56,20 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
             </span>
           </div>
           
-          {/* Navigation - hidden on mobile, responsive spacing on larger screens */}
+       
           <nav className="hidden md:inline-flex items-center relative py-3 lg:py-5 xl:py-6">
-            {/* Blue gradient line at top - responsive thickness */}
+
             <div 
               className="absolute top-0 left-0 right-0 h-0.5 lg:h-1 opacity-50"
               style={gradientLineStyle}
             />
-            
-            {/* Blue gradient line at bottom - responsive thickness */}
+  
             <div 
               className="absolute bottom-0 left-0 right-0 h-0.5 lg:h-1 opacity-50"
               style={gradientLineStyle}
             />
             
-            {/* Navigation links with responsive spacing and sizing */}
+           
             {navItems.map((item) => (
               <a 
                 key={item}
@@ -83,7 +82,7 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
             ))}
           </nav>
           
-          {/* Sign Up Button - responsive sizing and spacing */}
+        
           <div className="flex-shrink-0 hidden sm:block">
             <button 
               className="text-white font-medium transition-all duration-200 text-xs sm:text-sm lg:text-base px-4 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 rounded-lg sm:rounded-xl lg:rounded-xl"
@@ -93,7 +92,7 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
             </button>
           </div>
           
-          {/* Mobile menu button */}
+       
           <div className="md:hidden">
             <button 
               onClick={toggleMobileMenu}
@@ -123,12 +122,12 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
         </div>
       </div>
       
-      {/* Mobile Navigation with smooth animation */}
+      
       <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden bg-white border-t border-blue-100 ${
         isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
       }`}>
         <div className="px-4 sm:px-6 pt-4 pb-6 space-y-1">
-          {/* Mobile navigation links */}
+     
           {navItems.map((item) => (
             <a 
               key={item}
@@ -141,7 +140,7 @@ export default function HeaderSection({ className = '' }: HeaderProps) {
             </a>
           ))}
           
-          {/* Mobile Sign Up Button */}
+    
           <div className="pt-4 sm:hidden">
             <button 
               className="w-full text-white font-medium py-3 px-4 rounded-lg transition-all duration-200"
